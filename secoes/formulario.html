@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>CIF</title>	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+		crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/geral.css">
+		<link rel="shortcut icon" type="imagex/ico" href="../imagens/icon.ico">
+		<script src="../js/java.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+			crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<header>
+			<div id="cabecalho">
+				<nav class="navbar bg-body-tertiary">
+				  <div class="container-fluid">
+					<a class="navbar-brand" href="../index.html">
+					  <img src="../imagens/logociff.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-middle">
+					 </a>
+				</div>
+				</nav>
+			</div>
+			<div id="menu">
+				<nav class="navbar navbar-expand-lg">
+						<button 
+						class="navbar-toggler" type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#navbarSupportedContent" 
+						aria-controls="navbarSupportedContent" 
+						aria-expanded="false" 
+						aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="collapse" href="../index.html">Sobre a empresa</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="collapse" href="../index.html">Nossos produtos</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="collapse" href="#rodape">Endereço</a>
+						</li>
+					  </ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div id="forms">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+								<h2 class="titulo_form text-center">Formulário de compra</h2>
+						</div>
+					</div>
+					<form>
+					<div class="mb-3">
+							<label for="clienteUF" class="form-label">Produto:</label>
+							<select name = "produto" class="form-control" id="clienteProduto">
+								<option value="sapolio">Sapólio Cremoso Tradicional</option>
+								<option value="desinfetante">Desinfetante Tira Limo Squeeze​</option>
+								<option value="detergenteLiq">Detergente Antibac</option>
+								<option value="limpadorBanheiro">Limpador Banheiro Squeeze</option>
+								<option value="detergentePo">Detergente em Pó Para Máquina De Lavar Louças</option>
+								<option value="limpaVidro">Limpa-vidro Líquido Ultra Rápido</option>
+								<option value="limpaDerreteG">Limpador Derrete Gordura</option>
+								<option value="lavaLouçasLi">Lava Louças Concentrado Limão</option>
+							</select>
+					</div>
+					<div class="mb-3">
+							<label for="clienteQuantidade" class="form-label">Quantidade:</label>
+							<input type="number" class="form-control" id="clienteQuantidade">
+					</div>
+					<div class="mb-3">
+							<label for="clienteNome" class="form-label">Nome:</label>
+							<input  type="text" class="form-control" id="clienteNome" >
+					  </div>
+					  <div class="mb-3">
+						<label for="clienteEmail" class="form-label">Email:</label>
+						<input type="email" class="form-control" id="clienteEmail" 
+						placeholder="nome@exemplo.com">
+					  </div>
+					  <div class="mb-3">
+						<label for="clienteSenha1" class="form-label">Senha:</label>
+						<input type="password" class="form-control" id="clienteSenha1"
+						placeholder= "Informe sua senha">
+					  </div>
+					  <div class="mb-3">
+							<label for="clienteCEP" class="form-label">CEP:</label>
+							<input type="text" class="form-control" id="clienteCEP">
+					  </div>
+					  <div class="mb-3">
+							<label for="clienteCidade" class="form-label">Cidade:</label>
+							<input type="text" class="form-control" id="clienteCidade">
+					  </div>					  
+					  <div class="mb-3">
+							<label for="clienteUF" class="form-label">Estado:</label>
+							<select name = "estado" class="form-control" id="clienteUF">
+								<option value="RS">RS</option>
+								<option value="SC">SC</option>
+								<option value="RS">SP</option>
+								<option value="SC">PR</option>
+							</select>
+					  </div>									  
+					  <div class="mb-3">
+							<label for="clienteRua" class="form-label">Rua/Av.:</label>
+							<input type="text" class="form-control" id="clienteRua" 
+							size = "50" maxlength="50" placeholder="Rua/Av. Logradouro">
+					  </div>
+					  <div class="mb-3">
+							<label for="clienteNumero" class="form-label">Número:</label>
+							<input type="number" class="form-control" id="clienteNumero" 
+							placeholder="Número">
+					  </div>
+					  <button onclick="alerta()" type="button" class="btn btn-success" value="Exibir Alert">Enviar seu pedido</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+				<div id="rodape">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2 text-center">
+								<p>Cif  | Unilever</p>
+							</div>
+							<div class="col-md-8 text-center">
+								<p> Av. Roraima nº 1000 - Bairro Camobi - Santa Maria - RS - CEP: 97105-900 </p>
+							</div>
+							<div class="col-md-2 text-center">
+								<p>(55) 3187-2045</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+	</body>
+</html>
